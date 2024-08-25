@@ -28,12 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Login";
+            userLabel = new Label();
+            passwordLabel = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            LoginButton = new Button();
+            SuspendLayout();
+            // 
+            // userLabel
+            // 
+            userLabel.AutoSize = true;
+            userLabel.Location = new Point(217, 101);
+            userLabel.Name = "userLabel";
+            userLabel.Size = new Size(116, 35);
+            userLabel.TabIndex = 0;
+            userLabel.Text = "usuario : ";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new Point(217, 255);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new Size(156, 35);
+            passwordLabel.TabIndex = 1;
+            passwordLabel.Text = "contraseña : ";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(463, 98);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(365, 41);
+            textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(463, 255);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(365, 41);
+            textBox2.TabIndex = 3;
+            // 
+            // LoginButton
+            // 
+            LoginButton.Location = new Point(463, 403);
+            LoginButton.Name = "LoginButton";
+            LoginButton.Size = new Size(236, 53);
+            LoginButton.TabIndex = 4;
+            LoginButton.Text = "iniciar sescion";
+            LoginButton.UseVisualStyleBackColor = true;
+            // 
+            // Login
+            // 
+            AutoScaleDimensions = new SizeF(14F, 35F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1223, 665);
+            Controls.Add(LoginButton);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(passwordLabel);
+            Controls.Add(userLabel);
+            Font = new Font("Segoe UI", 15F);
+            Margin = new Padding(5, 5, 5, 5);
+            Name = "Login";
+            Text = "Login";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label userLabel;
+        private Label passwordLabel;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Button LoginButton;
     }
 }
