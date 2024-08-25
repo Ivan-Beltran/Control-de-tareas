@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDeTareasUI", "ControlDeTareasUI\ControlDeTareasUI.csproj", "{D752FCE7-36F3-47CF-9BD0-ED3CA797FA87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemLibrary", "SystemLibrary\SystemLibrary.csproj", "{15E269EC-CB7C-4F53-AA54-B94BB427BD37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D752FCE7-36F3-47CF-9BD0-ED3CA797FA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D752FCE7-36F3-47CF-9BD0-ED3CA797FA87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D752FCE7-36F3-47CF-9BD0-ED3CA797FA87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D752FCE7-36F3-47CF-9BD0-ED3CA797FA87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E269EC-CB7C-4F53-AA54-B94BB427BD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E269EC-CB7C-4F53-AA54-B94BB427BD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E269EC-CB7C-4F53-AA54-B94BB427BD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E269EC-CB7C-4F53-AA54-B94BB427BD37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3E6EFB4-93FD-42BD-B95E-56F86847F84A}
+	EndGlobalSection
+EndGlobal
