@@ -30,67 +30,86 @@
         {
             titleLabel = new Label();
             newTaskLabel = new Label();
-            newTaskTextBox = new TextBox();
             addTaskButton = new Button();
-            TaskListBox = new ListBox();
+            newTaskTextBox = new TextBox();
+            taskListBox = new ListBox();
+            deleteButton = new Button();
             SuspendLayout();
             // 
             // titleLabel
             // 
             titleLabel.AutoSize = true;
-            titleLabel.Location = new Point(484, 9);
+            titleLabel.Location = new Point(372, 7);
+            titleLabel.Margin = new Padding(2, 0, 2, 0);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(193, 32);
+            titleLabel.Size = new Size(145, 23);
             titleLabel.TabIndex = 0;
             titleLabel.Text = "control de tareas";
             // 
             // newTaskLabel
             // 
             newTaskLabel.AutoSize = true;
-            newTaskLabel.Location = new Point(110, 80);
+            newTaskLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            newTaskLabel.Location = new Point(59, 44);
+            newTaskLabel.Margin = new Padding(2, 0, 2, 0);
             newTaskLabel.Name = "newTaskLabel";
-            newTaskLabel.Size = new Size(158, 32);
+            newTaskLabel.Size = new Size(131, 25);
             newTaskLabel.TabIndex = 1;
             newTaskLabel.Text = "nueva tarea : ";
             // 
-            // newTaskTextBox
-            // 
-            newTaskTextBox.Location = new Point(307, 80);
-            newTaskTextBox.Multiline = true;
-            newTaskTextBox.Name = "newTaskTextBox";
-            newTaskTextBox.Size = new Size(451, 34);
-            newTaskTextBox.TabIndex = 2;
-            // 
             // addTaskButton
             // 
-            addTaskButton.Location = new Point(836, 73);
+            addTaskButton.Location = new Point(1074, 40);
+            addTaskButton.Margin = new Padding(2);
             addTaskButton.Name = "addTaskButton";
-            addTaskButton.Size = new Size(176, 45);
+            addTaskButton.Size = new Size(136, 33);
             addTaskButton.TabIndex = 3;
-            addTaskButton.Text = "agragar tarea";
+            addTaskButton.Text = "agregar tarea";
             addTaskButton.UseVisualStyleBackColor = true;
+            addTaskButton.Click += addTaskButton_Click;
             // 
-            // TaskListBox
+            // newTaskTextBox
             // 
-            TaskListBox.FormattingEnabled = true;
-            TaskListBox.ItemHeight = 31;
-            TaskListBox.Location = new Point(110, 189);
-            TaskListBox.Name = "TaskListBox";
-            TaskListBox.Size = new Size(875, 376);
-            TaskListBox.TabIndex = 4;
+            newTaskTextBox.Location = new Point(221, 42);
+            newTaskTextBox.Margin = new Padding(2);
+            newTaskTextBox.Multiline = true;
+            newTaskTextBox.Name = "newTaskTextBox";
+            newTaskTextBox.Size = new Size(642, 53);
+            newTaskTextBox.TabIndex = 5;
+            // 
+            // taskListBox
+            // 
+            taskListBox.FormattingEnabled = true;
+            taskListBox.ItemHeight = 23;
+            taskListBox.Location = new Point(59, 157);
+            taskListBox.Name = "taskListBox";
+            taskListBox.Size = new Size(927, 211);
+            taskListBox.TabIndex = 6;
+            // 
+            // deleteButton
+            // 
+            deleteButton.Location = new Point(1074, 123);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(144, 29);
+            deleteButton.TabIndex = 7;
+            deleteButton.Text = "terminar tarea";
+            deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
             // 
             // Task
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1295, 669);
-            Controls.Add(TaskListBox);
-            Controls.Add(addTaskButton);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1383, 697);
+            Controls.Add(deleteButton);
+            Controls.Add(taskListBox);
             Controls.Add(newTaskTextBox);
+            Controls.Add(addTaskButton);
             Controls.Add(newTaskLabel);
             Controls.Add(titleLabel);
-            Font = new Font("Segoe UI", 14F);
-            Margin = new Padding(5, 5, 5, 5);
+            Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Task";
             Text = "Control";
             ResumeLayout(false);
@@ -101,8 +120,9 @@
 
         private Label titleLabel;
         private Label newTaskLabel;
-        private TextBox newTaskTextBox;
         private Button addTaskButton;
-        private ListBox TaskListBox;
+        private TextBox newTaskTextBox;
+        private ListBox taskListBox;
+        private Button deleteButton;
     }
 }

@@ -28,7 +28,7 @@ namespace ControlDeTareasUI.Main
 
         public void OnInvalidLoginNotification(object sender, string message)
         {
-            MessageBox.Show($"error:{message}",
+            MessageBox.Show($"error: {message}",
                 "evento personalizado",
                 MessageBoxButtons.RetryCancel,
                 MessageBoxIcon.Error);
@@ -49,7 +49,7 @@ namespace ControlDeTareasUI.Main
             else
             {
                 _invalidLoginErrorHandler.SendInvalidLoginNotification("credenciales incorrectas");
-            }   
+            }
         }
     }
 } 
