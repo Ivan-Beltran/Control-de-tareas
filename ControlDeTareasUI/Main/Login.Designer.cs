@@ -30,8 +30,8 @@
         {
             userLabel = new Label();
             passwordLabel = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            userTextBox = new TextBox();
+            passwordTextBox = new TextBox();
             LoginButton = new Button();
             SuspendLayout();
             // 
@@ -53,19 +53,19 @@
             passwordLabel.TabIndex = 1;
             passwordLabel.Text = "contraseña : ";
             // 
-            // textBox1
+            // userTextBox
             // 
-            textBox1.Location = new Point(463, 98);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(365, 41);
-            textBox1.TabIndex = 2;
+            userTextBox.Location = new Point(463, 98);
+            userTextBox.Name = "userTextBox";
+            userTextBox.Size = new Size(365, 41);
+            userTextBox.TabIndex = 2;
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            textBox2.Location = new Point(463, 255);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(365, 41);
-            textBox2.TabIndex = 3;
+            passwordTextBox.Location = new Point(463, 255);
+            passwordTextBox.Name = "passwordTextBox";
+            passwordTextBox.Size = new Size(365, 41);
+            passwordTextBox.TabIndex = 3;
             // 
             // LoginButton
             // 
@@ -75,6 +75,7 @@
             LoginButton.TabIndex = 4;
             LoginButton.Text = "iniciar sescion";
             LoginButton.UseVisualStyleBackColor = true;
+            LoginButton.Click += LoginButton_Click;
             // 
             // Login
             // 
@@ -82,12 +83,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1223, 665);
             Controls.Add(LoginButton);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(passwordTextBox);
+            Controls.Add(userTextBox);
             Controls.Add(passwordLabel);
             Controls.Add(userLabel);
             Font = new Font("Segoe UI", 15F);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Login";
             Text = "Login";
             ResumeLayout(false);
@@ -98,8 +99,8 @@
 
         private Label userLabel;
         private Label passwordLabel;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox userTextBox;
+        private TextBox passwordTextBox;
         private Button LoginButton;
     }
 }
